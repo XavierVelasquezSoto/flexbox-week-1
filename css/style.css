@@ -26,4 +26,93 @@ ul {
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: #0d192c;
+}
+
+.main {
+  padding: 24px;
+  border-radius: 15px;
+  width: 327px;
+  height: 543px;
+  background-color: #15263f;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cube {
+  width: 278px;
+  height: 278px;
+  border-radius: 8px;
+}
+
+.title {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.text {
+  color: #8bacd9;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.flex-total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.diamond {
+  width: 11px;
+  height: 18px;
+}
+.text-green {
+  font-family: 'Poppins', serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.green {
+  color: cyan;
+}
+
+.flex-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.clock {
+  width: 16px;
+  height: 16px;
+}
+
+.text-white {
+  color: #8bacd9;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+}
+
+.face {
+  width: 33px;
+  height: 33px;
+}
+
+.text-blue {
+  font-weight: 600;
+  font-family: 'Poppins', serif;
+  color: #8bacd9;
+  padding: 16px;
+}
+
+.blue {
+  color: white;
 }
