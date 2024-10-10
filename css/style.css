@@ -30,6 +30,7 @@ body {
 }
 
 .main {
+  position: relative;
   padding: 24px;
   border-radius: 15px;
   width: 327px;
@@ -37,18 +38,56 @@ body {
   background-color: #15263f;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 62px;
+}
+
+.main::before{
+  content: "";
+  position: absolute;
+  background-color: #2E405A;
+  width: 278px;
+  height: 1px;
+  top: auto;
+  bottom: 65px;
+}
+
+@media screen and (width>768)
+{
+  .main{
+    display: flex;
+    position: relative;    
+    width: 550px;
+    height: 596px;
+  }
+}
+
+.eye{
+  display: none;
 }
 
 .cube {
   width: 278px;
   height: 278px;
   border-radius: 8px;
+  margin-bottom: 24px;
+  background-color: #00FFF8;
+  
+}
+
+@media (hover:hover) {
+ 
 }
 
 .title {
   color: white;
   font-size: 22px;
   font-weight: 600;
+}
+
+@media (hover:hover) {
+  .title:hover{
+  color: #00FFF8;
+  }
 }
 
 .text {
@@ -107,12 +146,20 @@ body {
 }
 
 .text-blue {
+  margin: 0;
   font-weight: 600;
   font-family: 'Poppins', serif;
   color: #8bacd9;
-  padding: 16px;
+  padding-left: 16px;
 }
 
-.blue {
+.text-red{
+  margin-left: 5px;
+  font-family: 'Poppins', serif;
   color: white;
+}
+@media (hover:hover) {
+  .text-red:hover{
+    color: #00FFF8;
+  }
 }
